@@ -1,8 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
 .header-container {
   display: flex;
   justify-content: space-between;
-  width: 375px;
-  height: 92px;
+  width: 95%;
+  height: 30px;
+  padding: 2%;
 }
 
 .header-container > nav {
@@ -30,58 +38,60 @@
 }
 
 .content {
+  border: 1px solid red;
   display: flex;
   flex-direction: column;
   background-image: url("images/header.png");
   background-size: 100%;
   background-repeat: no-repeat;
-  width: 375px;
-  height: 604px;
+  width: 98%;
+  height: 90vh;
   border-radius: 0 0 0 100px;
   border-bottom: 2px solid #cfd8dc;
 }
 
 .intro {
-  width: 270px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: bold;
-  font-size: 50px;
+  font-weight: 700;
+  font-size: 40px;
   line-height: 52px;
   display: flex;
-  justify-content: center;
   align-items: center;
   color: #172b4d;
-  padding-left: 25px;
-  padding-top: 67px;
-  margin: 12px;
+  width: 70%;
+  margin: 5%;
+  margin-top: 25%;
 }
 
 .intro1 {
-  display: flex;
-  width: 327px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  position: static;
+  width: 327px;
+  height: 146px;
+  left: 24px;
+  top: 276px;
   color: #344563;
-  padding-left: 26px;
-  align-items: center;
-  justify-content: center;
-  margin: 12px 0;
+  margin-top: 0;
+}
+
+p.intro1 {
+  padding: 25px;
 }
 
 .intro2 {
   display: flex;
-  align-items: flex-start;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
-  padding-left: 26px;
+  margin-left: 6%;
 }
 
 .social {
@@ -92,14 +102,14 @@
 ul.social {
   margin-block-start: 1px;
   margin-block-end: 1px;
-  padding-inline-start: 1px;
+  padding-inline-start: 0;
 }
 
 .social-icon {
   align-items: center;
   justify-content: center;
   height: 20px;
-  padding-left: 26px;
+  padding: 10px 0 0 20px;
 }
 
 li.social-icon {

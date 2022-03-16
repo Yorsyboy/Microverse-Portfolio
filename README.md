@@ -47,11 +47,11 @@
 - LinkedIn: [LinkedIn](https://linkedin.com/in/taiwo-toyosi)
 
 
-<!-- ## 🤝 Contributing
+## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/). -->
+Feel free to check the [issues page](../../issues/).
 
 ## Show your support
 
@@ -63,6 +63,4 @@ Give a ⭐️ if you like this project!
 - Inspiration
 - etc
 
-<!-- ## 📝 License
 
-This project is [MIT](./MIT.md) licensed. -->
