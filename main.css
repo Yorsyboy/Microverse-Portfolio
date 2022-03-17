@@ -8,7 +8,7 @@
 .header-container {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 96%;
   height: 50px;
   padding: 2%;
 }
@@ -27,6 +27,7 @@
 
 .nav-item1 {
   flex-grow: 1;
+  text-decoration: none;
 }
 
 .nav-item2 {
@@ -70,7 +71,6 @@
   font-size: 16px;
   line-height: 24px;
   position: static;
-  width: 327px;
   height: 146px;
   left: 24px;
   top: 276px;
