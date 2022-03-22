@@ -452,6 +452,10 @@ li.skill {
   background-image: url(images/contact-me.png);
   background-repeat: no-repeat;
   background-position-x: right;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact-title {
@@ -467,10 +471,6 @@ li.skill {
   height: 56px;
   justify-content: center;
   padding-top: 80px;
-}
-
-.btn-form {
-  margin-left: 20px;
 }
 
 .contact-text {
@@ -501,42 +501,51 @@ li.skill {
 #username {
   background: #fff;
   height: 48px;
-  margin: 5px;
+  margin: 0 24px;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
-  padding-left: 16px;
+  padding: 0 24px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 21px;
   color: #172b4d;
-  width: 60%;
+  width: 327px;
+  margin-bottom: 18px;
 }
 
 #useremail {
   background: #fff;
   height: 48px;
-  margin: 5px;
+  margin: 0 24px;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
-  padding-left: 16px;
+  padding: 0 24px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 21px;
   color: #172b4d;
-  width: 60%;
+  width: 327px;
+  margin-bottom: 18px;
+
 }
 
 #usermessage {
   height: 170px;
   left: 24px;
-  margin: 5px;
+  margin: 0 24px;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
-  padding-top: 15px;
-  padding-left: 16px;
+  padding: 0 24px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 21px;
   color: #172b4d;
-  width: 60%;
+  width: 327px;
 }
+
+.contact-form button {
+  height: 48px;
+  width: 148px;
+  margin-left: -50px;
+}
+
