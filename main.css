@@ -245,7 +245,7 @@ li.social-icon {
 }
 
 .project-description > h1 {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -580,10 +580,6 @@ li.skill {
   }
 
   .header-container {
-    display: none;
-  }
-
-  .header-container {
     display: flex;
     justify-content: space-between;
     width: 95%;
@@ -677,7 +673,7 @@ li.skill {
   }
 
   .project-description > h1 {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -686,7 +682,7 @@ li.skill {
   }
 
   .role-name {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -708,7 +704,7 @@ li.skill {
   }
 
   .role-job {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
@@ -716,7 +712,7 @@ li.skill {
   }
 
   .role-year {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -725,7 +721,7 @@ li.skill {
   }
 
   .project-details > p {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -734,15 +730,6 @@ li.skill {
     height: 50px;
     left: 24px;
     top: 146px;
-  }
-
-  .project-description > h1 {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 31px;
-    line-height: 52px;
-    color: #091e42;
   }
 
   .info {
@@ -803,7 +790,7 @@ li.skill {
   }
 
   .contact-title {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -814,7 +801,7 @@ li.skill {
   }
 
   .contact-text {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
