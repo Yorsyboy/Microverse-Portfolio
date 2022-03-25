@@ -5,6 +5,14 @@
   margin: 0;
 }
 
+body {
+  background-color: #e5e5e5;
+}
+
+.web-nav {
+  display: none;
+}
+
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -27,6 +35,11 @@
 
 .nav-item1 {
   flex-grow: 1;
+  transition: all 1s;
+}
+
+.nav-item1:hover {
+  transform: rotate(360deg);
 }
 
 .nav-item2 {
@@ -70,7 +83,7 @@
   font-size: 16px;
   line-height: 24px;
   position: static;
-  width: 327px;
+  width: 90%;
   height: 146px;
   left: 24px;
   top: 276px;
@@ -110,6 +123,11 @@ ul.social {
   justify-content: center;
   height: 20px;
   padding: 10px 0 0 20px;
+  transition: all 2s;
+}
+
+.social-icon:hover {
+  transform: rotate(360deg);
 }
 
 li.social-icon {
@@ -121,8 +139,7 @@ li.social-icon {
   flex-direction: column;
   align-items: center;
   padding: 16px;
-  position: static;
-  width: 390px;
+  width: 90%;
   height: 600px;
   left: calc(50% - 327px / 2);
   top: 114px;
@@ -133,13 +150,13 @@ li.social-icon {
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 88px 20px;
+  margin: 8%;
 }
 
 .title {
   position: static;
-  width: 295px;
-  height: 36px;
+  width: 280px;
+  height: 25%;
   left: 0;
   top: 0;
   font-family: 'Poppins', sans-serif;
@@ -150,10 +167,6 @@ li.social-icon {
   color: #172b4d;
   padding-top: 10px;
   padding-bottom: 20px;
-}
-
-.multi {
-  padding-bottom: 50px;
 }
 
 .role {
@@ -228,9 +241,21 @@ li.social-icon {
   margin: 0.5px 0.5px;
 }
 
+.project-description {
+  margin-left: 5%;
+}
+
+.project-description > h1 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #091e42;
+}
+
 .project-details {
-  position: static;
-  width: 295px;
+  width: 70%;
   height: 76px;
   left: 0;
   top: 92px;
@@ -243,7 +268,8 @@ li.social-icon {
   flex: none;
   order: 1;
   flex-grow: 0;
-  margin: 12px 0;
+
+  /* margin: 12px 0; */
 }
 
 .skills {
@@ -252,14 +278,14 @@ li.social-icon {
   align-items: center;
   position: static;
   padding: 0.5px;
-  width: 310px;
+  width: 100%;
   height: 24px;
   left: 0.5px;
   top: 180px;
   flex: none;
   order: 2;
   flex-grow: 0;
-  margin: 12px 0.5px;
+  margin-top: 10%;
 }
 
 li.skill {
@@ -297,24 +323,25 @@ li.skill {
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 0.5px 0.5px;
+
+  /* margin: 0.5px 0.5px; */
 }
 
 .button-click {
   position: static;
-  width: 295px;
+  width: 70%;
   height: 72px;
   left: 0.5px;
   top: 216px;
   flex: none;
   order: 3;
   flex-grow: 0;
-  margin: 24px 0.5px;
+  margin-top: 30%;
 }
 
 .button-resume {
   position: static;
-  width: 295px;
+  width: 70%;
   height: 72px;
   left: 0.5px;
   top: 216px;
@@ -350,14 +377,13 @@ li.skill {
 
 .about {
   background: #fff;
-  width: 375px;
+  width: 90%;
 }
 
 .about-me {
   display: flex;
   position: static;
-  width: 327px;
-  height: 10.5px;
+  width: 90%;
   left: 0.5px;
   top: 0.5px;
   padding: 24px;
@@ -378,7 +404,7 @@ li.skill {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 327px;
+  width: 90%;
   padding: 24px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -394,7 +420,6 @@ li.skill {
 
 .lang-title {
   position: absolute;
-  width: 327px;
   height: 24px;
   left: 12px;
   right: 0;
@@ -416,7 +441,7 @@ li.skill {
 
 .lang-skill {
   position: static;
-  width: 303px;
+  width: 80%;
   height: 66.72px;
   left: 12px;
   top: 12px;
@@ -438,7 +463,7 @@ li.skill {
 .line {
   display: flex;
   height: 2px;
-  width: 327px;
+  width: 90%;
   background: #dfe1e6;
 }
 
@@ -512,7 +537,7 @@ li.skill {
   font-weight: 400;
   font-size: 21px;
   color: #172b4d;
-  width: 327px;
+  width: 70%;
   margin-bottom: 18px;
 }
 
@@ -527,7 +552,7 @@ li.skill {
   font-weight: 400;
   font-size: 21px;
   color: #172b4d;
-  width: 327px;
+  width: 70%;
   margin-bottom: 18px;
 }
 
@@ -542,11 +567,284 @@ li.skill {
   font-weight: 400;
   font-size: 21px;
   color: #172b4d;
-  width: 327px;
+  width: 70%;
 }
 
 .contact-form button {
   height: 48px;
   width: 148px;
   margin-left: -50px;
+}
+
+@media screen and (min-width: 992px) {
+  .body {
+    margin: 0;
+    background-color: #e5e5e5;
+  }
+
+  .header-container {
+    display: none;
+  }
+
+  .web-nav {
+    display: flex;
+  }
+
+  nav {
+    display: flex;
+    height: 80px;
+    width: 90%;
+    background: #fff;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+  }
+
+  nav .logo {
+    color: #6070ff;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+
+  nav ul li {
+    margin: 0 5px;
+  }
+
+  nav ul li a {
+    color: #344563;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  nav ul li a:hover {
+    color: #fff;
+    background: #344563;
+  }
+
+  .content {
+    background-image: url(images/Header-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100vh;
+    border-radius: 0 0 0 100px;
+    border-bottom: 1px solid #cfd8dc;
+    background-color: #fff;
+  }
+
+  .content p {
+    width: 63%;
+    margin-left: 20%;
+    margin-top: -5%;
+    line-height: 28px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content h3 {
+    margin-left: 20%;
+    margin-top: -5%;
+  }
+
+  .content ul {
+    margin-left: 20%;
+    margin-top: 1%;
+  }
+
+  .intro {
+    width: 400px;
+    font-size: 48px;
+    line-height: 60px;
+    margin-left: 22%;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: row;
+    align-items: normal;
+    justify-content: space-around;
+    margin: 5%;
+    width: 90%;
+    height: 60%;
+  }
+
+  .img-web {
+    display: flex;
+    width: 40%;
+  }
+
+  .project-description {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-details {
+    display: flex;
+    align-items: center;
+  }
+
+  .role {
+    display: flex;
+    align-items: center;
+    margin-top: 10%;
+  }
+
+  .role-name {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .role-dot {
+    width: 10px;
+    height: 10px;
+    left: 67px;
+    top: 12px;
+    background: #c1c7d0;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 6.5px 22px;
+    border-radius: 50%;
+  }
+
+  .role-job {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+  }
+
+  .role-year {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #6b778c;
+  }
+
+  .project-details > p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    width: 496px;
+    height: 50px;
+    left: 24px;
+    top: 146px;
+  }
+
+  .info {
+    margin-top: -2rem;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: row;
+    border-radius: 0 100px 0 0;
+    width: 100%;
+  }
+
+  .about p {
+    width: 82%;
+    margin-left: 2%;
+    line-height: 28px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-me {
+    padding: 2%;
+    margin-left: 3%;
+  }
+
+  .about h3 {
+    margin-left: 2%;
+    margin-top: -3%;
+  }
+
+  .social {
+    margin-left: 4%;
+    width: 70%;
+  }
+
+  .button-resume {
+    margin-left: 2%;
+  }
+
+  .button-click {
+    margin-top: 4%;
+  }
+
+  .left {
+    width: 50%;
+    margin-left: 5%;
+  }
+
+  .line {
+    display: flex;
+    height: 2px;
+    width: 500px;
+    background: #dfe1e6;
+  }
+
+  .contact-me {
+    margin-top: 1px;
+    width: 100%;
+  }
+
+  .contact-title {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-text {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    width: 38%;
+  }
+
+  form {
+    width: 38%;
+  }
+
+  .contact-me button {
+    margin-left: 25%;
+  }
 }
