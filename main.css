@@ -608,6 +608,11 @@ li.skill {
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
+    transition: all 1s;
+  }
+
+  .logo:hover {
+    transform: rotate(360deg);
   }
 
   nav ul {
@@ -675,6 +680,18 @@ li.skill {
     font-size: 48px;
     line-height: 60px;
     margin-left: 22%;
+    animation-name: introin;
+    animation-duration: 3s;
+  }
+
+  @keyframes introin {
+    from {
+      margin-left: 100%;
+    }
+
+    to {
+      margin-left: 22%;
+    }
   }
 
   .projects {
