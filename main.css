@@ -608,6 +608,11 @@ li.skill {
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
+    transition: all 1s;
+  }
+
+  .logo:hover {
+    transform: rotate(360deg);
   }
 
   nav ul {
