@@ -11,30 +11,46 @@
 - Webhint
 - Styelint
 
-<!-- ## Live Demo (if available)
+## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com) -->
-
-
-<!-- ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.** -->
+[Live Demo Link](https://yorsyboy.github.io/Microverse-Portfolio/)
 
 
-<!-- To get a local copy up and running follow these simple example steps. -->
+## Getting Started
+Cloning this project
+**Git clone https://github.com/Yorsyboy/Microverse-Portfolio.git**
+
+
+To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-
+- A working browser application.
+- VS code or anu other IDE
+- NPM (Node Package Manager)
 ### Setup
 
 ### Install
+*INSTALLING AND TESTING WEBHINT*
+- npm init -y
+- npm install --save-dev hint@6.x
+
+For validation detection to use Webhint Run
+-npx hint .
+
+*INSTALLING AND TESTING STYLEHINT*
+- npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
+
+For validation detection to use Webhint Run
+
+- npx stylelint "**/*.{css,scss}"
+
 
 ### Usage
 
 ### Run tests
 
 ### Deployment
+- Github
 
 
 
@@ -42,8 +58,8 @@
 
 👤 **Toyosi**
 
-- GitHub: [@githubhandle](https://github.com/Yorsyboy)
-- Twitter: [@twitterhandle](https://twitter.com/Tboytaiwo)
+- GitHub: [@Yorsyboy](https://github.com/Yorsyboy)
+- Twitter: [@tboytaiwo](https://twitter.com/Tboytaiwo)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/taiwo-toyosi)
 
 
