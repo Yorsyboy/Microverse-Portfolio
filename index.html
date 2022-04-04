@@ -12,22 +12,30 @@
 <body>
     <header>
         <div class="header-container">
-            <nav class="nav-item1">My logo</nav>
+            <nav class="nav-item1"><a class="Mylogo" href="">My Logo</a></nav>
             <nav class="nav-item2"></nav>
             <nav class="nav-item3">
-                <img src="images/toggle.png" alt="toggle">
+                <img class="toggle" src="images/toggle.png" alt="toggle" onclick="openNav()">
             </nav>
+            <div id="myNav" class="overlay">
+                <a class="closebtn"> &times; </a>
+                <div class="overlay-content">
+                    <a class="pop-nav" href="#portfolio">Portfolio</a>
+                    <a class="pop-nav" href="#about">About</a>
+                    <a class="pop-nav" href="#contact">Contact</a>
+                </div>
+            </div>
         </div>
         <nav class="web-nav">
             <div class="logo">
-               My Logo
+                <a class="Mylogo" href="">My Logo</a>
             </div>
             <ul>
-               <li><a href="#">Portfolio</a></li>
-               <li><a href="#">About</a></li>
-               <li><a href="#">Contact</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-         </nav>
+        </nav>
     </header>
     <section class="content">
         <h1 class="intro">I’m Toyosi Glad to see you!</h1>
@@ -55,7 +63,7 @@
             </li>
         </ul>
     </section>
-    <section class="project-section">
+    <section id="portfolio" class="project-section">
         <div>
             <div class="projects">
                 <div class="img-web">
@@ -86,7 +94,7 @@
                     </div>
                 </div>
             </div>
-    
+
             <div class="projects">
                 <div class="img-web">
                     <img class="" src="images/project2.png" alt="project1">
@@ -116,7 +124,7 @@
                     </div>
                 </div>
             </div>
-    
+
             <div class="projects">
                 <div class="img-web">
                     <img class="" src="images/project3.png" alt="project1">
@@ -146,7 +154,7 @@
                     </div>
                 </div>
             </div>
-    
+
             <div class="projects">
                 <div class="img-web">
                     <img class="" src="images/project4.png" alt="project1">
@@ -177,17 +185,17 @@
                 </div>
             </div>
         </div>
-        
+
     </section>
-    <section class="about">
+    <section id="about" class="about">
         <div class="left">
             <h1 class="about-me"> About Myself</h1>
-        <p class="intro1">
-            Hello I’m a software developer! I can help you build a
-            product , feature or website Look through some of my
-            work and experience! If you like what you see and have
-            a project you need coded, don’t hestiate to contact me.
-        </p>
+            <p class="intro1">
+                Hello I’m a software developer! I can help you build a
+                product , feature or website Look through some of my
+                work and experience! If you like what you see and have
+                a project you need coded, don’t hestiate to contact me.
+            </p>
             <h3 class="intro2">LET’S CONNECT</h3>
             <ul class="social">
                 <li class="social-icon">
@@ -215,7 +223,7 @@
         </div>
         <div class="right">
             <div class="lang">
-                
+
             </div>
             <ul class="language-list">
                 <li class="lang">
@@ -259,7 +267,7 @@
             </ul>
         </div>
     </section>
-    <section class="contact-me">
+    <section id="contact" class="contact-me">
         <div class="bg-image">
             <h1 class="contact-title">Contact me</h1>
             <p class="contact-text">
@@ -278,6 +286,8 @@
             </form>
         </div>
     </section>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
