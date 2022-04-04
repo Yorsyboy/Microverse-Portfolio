@@ -3,6 +3,8 @@
 * {
   padding: 0;
   margin: 0;
+  text-decoration: none;
+  list-style: none;
 }
 
 body {
@@ -13,24 +15,31 @@ body {
   display: none;
 }
 
+.Mylogo {
+  text-decoration: none;
+  color: #6070ff;
+}
+
 .header-container {
   display: flex;
   justify-content: space-between;
   width: 100%;
   height: 50px;
   padding: 2%;
-}
-
-.header-container > nav {
+  background-color: #fff;
   color: #6070ff;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  display: flex;
   align-items: center;
   text-align: center;
+  overflow: hidden;
+}
+
+.header-container #myLinks {
+  display: none;
 }
 
 .nav-item1 {
@@ -50,12 +59,65 @@ body {
   flex-grow: 1;
 }
 
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #6070ff;
+  opacity: 0.9;
+}
+
+.overlay-content {
+  position: relative;
+  top: 5%;
+  width: 100%;
+  text-align: left;
+  margin-top: 30px;
+}
+
+.hamburger-span {
+  color: #6070ff;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 32px;
+  color: #fff;
+  font-weight: 600;
+  display: block;
+  transition: 0.3s;
+  line-height: 44px;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 11px;
+  right: 5px;
+  font-size: 30px;
+  font-weight: normal;
+  border: 2px;
+  cursor: pointer;
+}
+
 .content {
   display: flex;
   flex-direction: column;
   background-image: url("images/header.png");
   background-size: 100%;
   background-repeat: no-repeat;
+  background-color: #fff;
   width: 98%;
   height: 90vh;
   border-radius: 0 0 0 100px;
@@ -74,6 +136,18 @@ body {
   width: 70%;
   margin: 5%;
   margin-top: 25%;
+  animation-name: introin;
+  animation-duration: 4s;
+}
+
+@keyframes introin {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 22%;
+  }
 }
 
 .intro1 {
@@ -268,8 +342,6 @@ li.social-icon {
   flex: none;
   order: 1;
   flex-grow: 0;
-
-  /* margin: 12px 0; */
 }
 
 .skills {
@@ -323,8 +395,6 @@ li.skill {
   flex: none;
   order: 0;
   flex-grow: 0;
-
-  /* margin: 0.5px 0.5px; */
 }
 
 .button-click {
@@ -590,6 +660,11 @@ li.skill {
     display: flex;
   }
 
+  .Mylogo {
+    text-decoration: none;
+    color: #6070ff;
+  }
+
   nav {
     display: flex;
     height: 80px;
@@ -681,7 +756,7 @@ li.skill {
     line-height: 60px;
     margin-left: 22%;
     animation-name: introin;
-    animation-duration: 3s;
+    animation-duration: 4s;
   }
 
   @keyframes introin {
