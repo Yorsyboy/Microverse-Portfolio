@@ -663,8 +663,7 @@ li.social-icon {
 }
 
 .modal-example img {
-  width: 66%;
-  padding-left: 5%;
+  width: 100%;
 }
 
 .modal-example .closeModal {
@@ -760,6 +759,7 @@ li.social-icon {
 ul.project__lang {
   display: flex;
   list-style-type: none;
+  padding: 5%;
 }
 
 .project__lang a.lang1 {
@@ -842,12 +842,11 @@ ul.project__lang {
   }
 
   .modal-img {
-    max-height: 400px;
-    max-width: 60%;
+    width: 90%;
   }
 
   .desc {
-    width: 60%;
+    width: 50%;
   }
 
   nav {
