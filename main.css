@@ -658,6 +658,12 @@ li.social-icon {
   margin-top: 0;
 }
 
+.alert {
+  color: red;
+  margin-top: 5%;
+  font-family: "poppins", sans-serif;
+}
+
 .modal-example.show {
   display: flex;
 }
