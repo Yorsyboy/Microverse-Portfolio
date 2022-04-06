@@ -329,16 +329,14 @@ li.social-icon {
 }
 
 .project-details {
-  width: 70%;
-  height: 76px;
-  left: 0;
-  top: 92px;
+  width: 100%;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   color: #344563;
+  margin-top: 5%;
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -360,25 +358,6 @@ li.social-icon {
   margin-top: 10%;
 }
 
-li.skill {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 4px 12px;
-  position: static;
-  width: 53px;
-  height: 24px;
-  left: 0.5px;
-  top: 0.5px;
-  background: #ebebff;
-  border-radius: 8px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 0.5px 8px;
-}
-
 .skill {
   position: static;
   width: 29px;
@@ -392,6 +371,10 @@ li.skill {
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #6070ff;
+  background: #ebebff;
+  border-radius: 8px;
+  padding: 4px 12px;
+  margin: 0.5px 8px;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -406,7 +389,6 @@ li.skill {
   flex: none;
   order: 3;
   flex-grow: 0;
-  margin-top: 30%;
 }
 
 .button-resume {
@@ -438,6 +420,7 @@ li.skill {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #396df2;
+  margin-top: 5%;
 }
 
 .btn:hover {
@@ -643,7 +626,183 @@ li.skill {
 .contact-form button {
   height: 48px;
   width: 148px;
-  margin-left: -50px;
+  margin-left: -15%;
+}
+
+.modal-example {
+  display: none;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 20px;
+  margin: 5%;
+  width: 80%;
+  padding: 10px;
+  position: fixed;
+  animation: smoth-effet-open 0.7s;
+  top: 0;
+  color: #172b4d;
+}
+
+.modal-btn {
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  padding: 8px;
+  border-radius: 8px;
+  background: #fff;
+  border: 2px #6070ff solid;
+  outline: none;
+  color: #6070ff;
+  font-weight: 600;
+  margin-right: 5px;
+  margin-top: 0;
+}
+
+.modal-example.show {
+  display: flex;
+}
+
+.modal-example img {
+  width: 66%;
+  padding-left: 5%;
+}
+
+.modal-example .closeModal {
+  font-size: 50px;
+  color: #67798e;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.modelContainer {
+  width: 50%;
+  min-height: 40%;
+  overflow: auto;
+  padding-bottom: 100px;
+}
+
+.see-project-buttons {
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px;
+  width: 260px;
+  margin-top: 20px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(193, 199, 208, 0.7);
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 90%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.close {
+  color: #172b4d;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #172b4d;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul.project__lang {
+  display: flex;
+  list-style-type: none;
+}
+
+.project__lang a.lang1 {
+  margin: 20px 10px 20px 0;
+  background: #ebebff;
+  color: #6070ff;
+  font-weight: 500;
+  border-radius: 7px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.modal-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.short_desc {
+  display: flex;
+  align-items: center;
+}
+
+.short_desc * {
+  margin-right: 10px;
+}
+
+.short_desc h4 {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #7a869a;
+}
+
+.short_desc h4:nth-child(1) {
+  color: #344563;
+  text-transform: uppercase;
+}
+
+.short_desc span {
+  background-color: #c1c7d0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
 }
 
 @media screen and (min-width: 992px) {
@@ -663,6 +822,32 @@ li.skill {
   .Mylogo {
     text-decoration: none;
     color: #6070ff;
+  }
+
+  .modal-example {
+    width: 60%;
+    padding: 2%;
+  }
+
+  .modal-example.show {
+    right: 0;
+    max-width: 100%;
+    bottom: 0;
+    max-height: 608px;
+    transform: translate(-10%, 0%);
+  }
+
+  .modal__body {
+    overflow-y: auto;
+  }
+
+  .modal-img {
+    max-height: 400px;
+    max-width: 60%;
+  }
+
+  .desc {
+    width: 60%;
   }
 
   nav {
@@ -773,7 +958,6 @@ li.skill {
     display: flex;
     flex-direction: row;
     align-items: normal;
-    justify-content: space-around;
     margin: 5%;
     width: 90%;
     height: 60%;
@@ -790,14 +974,16 @@ li.skill {
   }
 
   .project-details {
-    display: flex;
     align-items: center;
+  }
+
+  .project-desc {
+    display: flex;
   }
 
   .role {
     display: flex;
     align-items: center;
-    margin-top: 10%;
   }
 
   .role-name {
