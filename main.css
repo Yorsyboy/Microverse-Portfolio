@@ -623,6 +623,12 @@ li.social-icon {
   width: 70%;
 }
 
+.alert {
+  color: red;
+  margin-top: 5%;
+  font-family: "poppins", sans-serif;
+}
+
 .contact-form button {
   height: 48px;
   width: 148px;
