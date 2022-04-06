@@ -84,7 +84,7 @@ for (let i = 0; i < projectsList.length; i += 1) {
           </div>
           <div class='project-description'>
             <h1 class='title'>${projectsList[i].name}</h1>
-            <div class='role'>
+            <div class='role row'>
               <div class="role-name">${projectsList[i].company}</div>
                 <div class="role-dot"></div>
                 <div class="role-job">${projectsList[i].role}</div>

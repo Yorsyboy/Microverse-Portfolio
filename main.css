@@ -243,9 +243,13 @@ li.social-icon {
   padding-bottom: 20px;
 }
 
-.role {
+/* .role {
   display: grid;
   grid-template-columns: 1fr 0.5fr 1.5fr 0.5fr 1.5fr 0fr;
+} */
+
+.row {
+  display: flex;
 }
 
 .role-name {
@@ -662,9 +666,9 @@ li.social-icon {
   display: flex;
 }
 
-.modal-example img {
+/* .modal-example img {
   width: 100%;
-}
+} */
 
 .modal-example .closeModal {
   font-size: 50px;
@@ -838,12 +842,12 @@ ul.project__lang {
   }
 
   .modal__body {
-    overflow-y: auto;
+    overflow-y: hidden;
   }
 
-  .modal-img {
+  /* .modal-img {
     width: 90%;
-  }
+  } */
 
   .desc {
     width: 50%;
