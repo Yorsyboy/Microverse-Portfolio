@@ -116,7 +116,7 @@ for (let i = 0; i < projectsList.length; i += 1) {
     role.innerHTML = projectsList[i].role;
     year.innerHTML = projectsList[i].year;
 
-    document.querySelector('projectname').classList.add('blur');
+    document.querySelector('.project-section').classList.add('blur');
     document.querySelector('.header').classList.add('blur');
     document.querySelector('.content').classList.add('blur');
     document.querySelector('.about').classList.add('blur');
