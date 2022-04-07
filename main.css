@@ -5,7 +5,6 @@
   margin: 0;
   text-decoration: none;
   list-style: none;
-  font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -167,7 +166,7 @@ body {
 }
 
 p.intro1 {
-  padding: 25px;
+  padding: 15px;
 }
 
 .intro2 {
@@ -244,13 +243,9 @@ li.social-icon {
   padding-bottom: 20px;
 }
 
-/* .role {
-  display: grid;
-  grid-template-columns: 1fr 0.5fr 1.5fr 0.5fr 1.5fr 0fr;
-} */
-
-.row {
+.role {
   display: flex;
+  /* grid-template-columns: 1fr 0.5fr 1.5fr 0.5fr 1.5fr 0fr; */
 }
 
 .role-name {
@@ -285,8 +280,6 @@ li.social-icon {
 }
 
 .role-job {
-  position: static;
-  width: 88px;
   height: 16px;
   left: 0;
   top: 8px;
@@ -360,7 +353,7 @@ li.social-icon {
   flex: none;
   order: 2;
   flex-grow: 0;
-  margin-top: 10%;
+  margin-top: 4%;
 }
 
 .skill {
@@ -628,6 +621,12 @@ li.social-icon {
   width: 70%;
 }
 
+.alert {
+  color: red;
+  margin-top: 5%;
+  font-family: "poppins", sans-serif;
+}
+
 .contact-form button {
   height: 48px;
   width: 148px;
@@ -648,15 +647,10 @@ li.social-icon {
   color: #172b4d;
 }
 
-.blur {
-  filter: blur(5px);
-}
-
 .modal-btn {
   font-size: 17px;
-  line-height: 24px;
   text-align: center;
-  padding: 8px;
+  padding: 4px;
   border-radius: 8px;
   background: #fff;
   border: 2px #6070ff solid;
@@ -671,12 +665,8 @@ li.social-icon {
   display: flex;
 }
 
-/* .modal-example img {
-  width: 100%;
-} */
-
-.modal-img {
-
+.modal-example img {
+  width: 65%;
 }
 
 .modal-example .closeModal {
@@ -818,6 +808,10 @@ ul.project__lang {
   border-radius: 50%;
 }
 
+.blur {
+  filter: blur(5px);
+}
+
 @media screen and (min-width: 992px) {
   .body {
     margin: 0;
@@ -851,12 +845,12 @@ ul.project__lang {
   }
 
   .modal__body {
-    overflow-y: hidden;
+    overflow-y: auto;
   }
 
-  /* .modal-img {
+  .modal-img {
     width: 90%;
-  } */
+  }
 
   .desc {
     width: 50%;
@@ -865,11 +859,11 @@ ul.project__lang {
   nav {
     display: flex;
     height: 80px;
-    width: 90%;
+    width: 97%;
     background: #fff;
     align-items: center;
     justify-content: space-between;
-    padding: 0 50px 0 100px;
+    padding: 10px;
     flex-wrap: wrap;
   }
 
@@ -920,7 +914,7 @@ ul.project__lang {
     background-image: url(images/Header-bg.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 100%;
+    width: 99%;
     height: 100vh;
     border-radius: 0 0 0 100px;
     border-bottom: 1px solid #cfd8dc;
@@ -1057,13 +1051,13 @@ ul.project__lang {
     display: flex;
     flex-direction: row;
     border-radius: 0 100px 0 0;
-    width: 100%;
+    width: 99%;
+    padding: 2px;
   }
 
   .about p {
-    width: 82%;
     margin-left: 2%;
-    line-height: 28px;
+    line-height: 24px;
     font-size: 20px;
     align-items: center;
     justify-content: center;
@@ -1106,7 +1100,7 @@ ul.project__lang {
 
   .contact-me {
     margin-top: 1px;
-    width: 100%;
+    width: 99%;
   }
 
   .contact-title {
