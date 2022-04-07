@@ -142,3 +142,21 @@ contactForm.addEventListener('submit', (event) => {
     event.preventDefault();
   }
 });
+
+const nameField = document.querySelector('#username')
+const emailAddressField = document.querySelector('#useremail');
+const messageField = document.querySelector('#usermessage');
+
+contactForm.addEventListener('input', () => {
+  const userData = {
+    name: nameField.value,
+    email: emailAddressField.value,
+    message: messageField.value,
+  };
+  localStorage.setItem('userData', JSON.stringify(userData));
+});
+const userDataFromLocalStorage = JSON.parse(localStorage.getItem('userData'));
+nameField.value = userDataFromLocalStorage.name;
+// console.log(userDataFromLocalStorage);
+emailAddressField.value = userDataFromLocalStorage.email;
+messageField.value = userDataFromLocalStorage.message;
