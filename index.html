@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" media="screen" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="header-container">
             <nav class="nav-item1"><a class="Mylogo" href="">My Logo</a></nav>
             <nav class="nav-item2"></nav>
@@ -64,127 +65,6 @@
         </ul>
     </section>
     <section id="portfolio" class="project-section">
-        <div>
-            <div class="projects">
-                <div class="img-web">
-                    <img class="" src="images/project1.png" alt="project1">
-                </div>
-                <div class="project-description">
-                    <h1 class="title">Tonic</h1>
-                    <div class="role">
-                        <div class="role-name">CANOPY</div>
-                        <div class="role-dot"></div>
-                        <div class="role-job">Back End Dev</div>
-                        <div class="role-dot"></div>
-                        <div class="role-year">2015</div>
-                    </div>
-                    <div class="project-details">
-                        <p>
-                            A daily selection of privately personalized
-                            reads; no accounts or sign-ups required.
-                        </p>
-                    </div>
-                    <ul class="skills">
-                        <li class="skill set1">html</li>
-                        <li class="skill set2">css</li>
-                        <li class="skill set3">javascript</li>
-                    </ul>
-                    <div class="button-click">
-                        <button type="button" class="btn">See Project</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="projects">
-                <div class="img-web">
-                    <img class="" src="images/project2.png" alt="project1">
-                </div>
-                <div class="project-description">
-                    <h1 class="title">Multi-Post Stories</h1>
-                    <div class="role">
-                        <div class="role-name">CANOPY</div>
-                        <div class="role-dot"></div>
-                        <div class="role-job">Back End Dev</div>
-                        <div class="role-dot"></div>
-                        <div class="role-year">2015</div>
-                    </div>
-                    <div class="project-details">
-                        <p>
-                            A daily selection of privately personalized
-                            reads; no accounts or sign-ups required.
-                        </p>
-                    </div>
-                    <ul class="skills">
-                        <li class="skill set1">html</li>
-                        <li class="skill set2">css</li>
-                        <li class="skill set3">javascript</li>
-                    </ul>
-                    <div class="button-click">
-                        <button type="button" class="btn">See Project</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="projects">
-                <div class="img-web">
-                    <img class="" src="images/project3.png" alt="project1">
-                </div>
-                <div class="project-description">
-                    <h1 class="title">Tonic</h1>
-                    <div class="role">
-                        <div class="role-name">CANOPY</div>
-                        <div class="role-dot"></div>
-                        <div class="role-job">Back End Dev</div>
-                        <div class="role-dot"></div>
-                        <div class="role-year">2015</div>
-                    </div>
-                    <div class="project-details">
-                        <p>
-                            A daily selection of privately personalized
-                            reads; no accounts or sign-ups required.
-                        </p>
-                    </div>
-                    <ul class="skills">
-                        <li class="skill">html</li>
-                        <li class="skill">css</li>
-                        <li class="skill">javascript</li>
-                    </ul>
-                    <div class="button-click">
-                        <button type="button" class="btn">See Project</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="projects">
-                <div class="img-web">
-                    <img class="" src="images/project4.png" alt="project1">
-                </div>
-                <div class="project-description">
-                    <h1 class="title">Multi-Post Stories</h1>
-                    <div class="role">
-                        <div class="role-name">CANOPY</div>
-                        <div class="role-dot"></div>
-                        <div class="role-job">Back End Dev</div>
-                        <div class="role-dot"></div>
-                        <div class="role-year">2015</div>
-                    </div>
-                    <div class="project-details">
-                        <p>
-                            A daily selection of privately personalized
-                            reads; no accounts or sign-ups required.
-                        </p>
-                    </div>
-                    <ul class="skills">
-                        <li class="skill set1">html</li>
-                        <li class="skill set2">css</li>
-                        <li class="skill set3">javascript</li>
-                    </ul>
-                    <div class="button-click">
-                        <button type="button" class="btn">See Project</button>
-                    </div>
-                </div>
-            </div>
-        </div>
 
     </section>
     <section id="about" class="about">
@@ -280,12 +160,49 @@
                 <input type="email" name="email" id="useremail" placeholder="Your Email" required />
                 <textarea name="message" id="usermessage" cols="30" rows="10" maxlength="500"
                     placeholder="Write your message here" required></textarea>
+                    <p class="alert"></p>
                 <div class="button-resume btn-form">
                     <button class="btn" type="submit">Get in touch</button>
                 </div>
             </form>
         </div>
     </section>
+
+    <div class="modal-example">
+        <div class="modal-head">
+          <h1 class="projectname"></h1>
+          <button type="button" class="closeModal">&times;</button>
+        </div>
+        <div class="modal__body">
+          <div class="short_desc">
+            <h4 class="company"></h4>
+            <span></span>
+            <h4 class="role"></h4>
+            <span></span>
+            <h6 class="year"></h6>
+          </div>
+          <img src="#" alt="img" class="modal-img">
+          <div class="project-desc">
+            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatem pariatur modi rerum error
+              ea consequatur, excepturi eum maiores! Quo quibusdam culpa ratione.?Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit.
+              !</p>
+            <div class="desc_btn">
+              <ul class="project__lang">
+                <li><a href="" class="lang1" title="html">html</a></li>
+                <li><a href="" class="lang1" title="css">css</a></li>
+                <li>
+                  <a href="#" class="lang1" title="javascript">javascript</a>
+                </li>
+              </ul>
+              <div class="final">
+                <button type="button" class="modal-btn">See live <i class="fa fa-external-link" aria-hidden="true"></i></button>
+                <button type="button" class="modal-btn">See source <i class="fa fa-github"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <script src="main.js"></script>
 </body>
