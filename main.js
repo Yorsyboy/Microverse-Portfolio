@@ -143,7 +143,7 @@ contactForm.addEventListener('submit', (event) => {
   }
 });
 
-const nameField = document.querySelector('#username')
+const nameField = document.querySelector('#username');
 const emailAddressField = document.querySelector('#useremail');
 const messageField = document.querySelector('#usermessage');
 
@@ -157,6 +157,5 @@ contactForm.addEventListener('input', () => {
 });
 const userDataFromLocalStorage = JSON.parse(localStorage.getItem('userData'));
 nameField.value = userDataFromLocalStorage.name;
-// console.log(userDataFromLocalStorage);
 emailAddressField.value = userDataFromLocalStorage.email;
 messageField.value = userDataFromLocalStorage.message;
