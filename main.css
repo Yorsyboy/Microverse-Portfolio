@@ -5,6 +5,7 @@
   margin: 0;
   text-decoration: none;
   list-style: none;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -647,6 +648,10 @@ li.social-icon {
   color: #172b4d;
 }
 
+.blur {
+  filter: blur(5px);
+}
+
 .modal-btn {
   font-size: 17px;
   line-height: 24px;
@@ -669,6 +674,10 @@ li.social-icon {
 /* .modal-example img {
   width: 100%;
 } */
+
+.modal-img {
+
+}
 
 .modal-example .closeModal {
   font-size: 50px;
