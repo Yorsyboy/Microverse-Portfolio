@@ -7,9 +7,13 @@
 
 ## Built With
 
-- HTML and CSS
+- HTML, CSS and Javascript
 - Webhint
 - Styelint
+- Lighthouse (An open-source, automated tool for improving the quality of web pages. It has audits for performance, accessibility, progressive web apps, SEO and more).
+- Webhint (A customizable linting tool that helps you improve your site's accessibility, speed, cross-browser compatibility, and more by checking your code for best practices and common errors).
+- Stylelint (A mighty, modern linter that helps you avoid errors and enforce conventions in your styles).
+- ESLint
 
 ## Live Demo (if available)
 
@@ -17,8 +21,10 @@
 
 
 ## Getting Started
-Cloning this project
-**Git clone https://github.com/Yorsyboy/Microverse-Portfolio.git**
+#### Cloning the project
+```
+Git clone https://github.com/Yorsyboy/Microverse-Portfolio.git
+```
 
 
 To get a local copy up and running follow these simple example steps.
@@ -31,18 +37,24 @@ To get a local copy up and running follow these simple example steps.
 
 ### Install
 *INSTALLING AND TESTING WEBHINT*
+```
 - npm init -y
 - npm install --save-dev hint@6.x
-
+```
+```
 For validation detection to use Webhint Run
 -npx hint .
+```
 
 *INSTALLING AND TESTING STYLEHINT*
+```
 - npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
+```
 
 For validation detection to use Webhint Run
-
+```
 - npx stylelint "**/*.{css,scss}"
+```
 
 
 ### Usage
