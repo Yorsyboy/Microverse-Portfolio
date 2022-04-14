@@ -2,7 +2,7 @@
 
 # Portfolio
 
-> Builing a portfplio page about myself
+> Builing a portfolio page about myself
 
 
 ## Built With
