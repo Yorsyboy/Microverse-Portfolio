@@ -4,6 +4,10 @@
 
 > Builing a portfolio page about myself
 
+## Live Demo 
+
+[Portfolio](https://yorsyboy.github.io/Microverse-Portfolio/)
+
 
 ## Built With
 
@@ -14,11 +18,6 @@
 - Webhint (A customizable linting tool that helps you improve your site's accessibility, speed, cross-browser compatibility, and more by checking your code for best practices and common errors).
 - Stylelint (A mighty, modern linter that helps you avoid errors and enforce conventions in your styles).
 - ESLint
-
-## Live Demo (if available)
-
-[Live Demo Link](https://yorsyboy.github.io/Microverse-Portfolio/)
-
 
 ## Getting Started
 #### Cloning the project
